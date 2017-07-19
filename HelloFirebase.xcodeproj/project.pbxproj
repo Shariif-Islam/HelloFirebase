@@ -12,6 +12,8 @@
 		12159C281F1B5E4E00570B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12159C261F1B5E4E00570B64 /* Main.storyboard */; };
 		12159C2A1F1B5E4E00570B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12159C291F1B5E4E00570B64 /* Assets.xcassets */; };
 		12159C2D1F1B5E4E00570B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12159C2B1F1B5E4E00570B64 /* LaunchScreen.storyboard */; };
+		12159C351F1B5ECA00570B64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12159C341F1B5ECA00570B64 /* GoogleService-Info.plist */; };
+		65460BB8F48ACC41862CC3EC /* Pods_HelloFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441B271D9470940083A9580F /* Pods_HelloFirebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		12159C291F1B5E4E00570B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12159C2C1F1B5E4E00570B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12159C2E1F1B5E4E00570B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12159C341F1B5ECA00570B64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		441B271D9470940083A9580F /* Pods_HelloFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91C11DB856C59020B12D1603 /* Pods-HelloFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloFirebase/Pods-HelloFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		CD2A6385BF1958E22817291B /* Pods-HelloFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloFirebase/Pods-HelloFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65460BB8F48ACC41862CC3EC /* Pods_HelloFirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				12159C211F1B5E4E00570B64 /* HelloFirebase */,
 				12159C201F1B5E4E00570B64 /* Products */,
+				E2D45A58D5DE2CD0BC0FDF67 /* Pods */,
+				CF60708F9957D57D1C61A270 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				12159C291F1B5E4E00570B64 /* Assets.xcassets */,
 				12159C2B1F1B5E4E00570B64 /* LaunchScreen.storyboard */,
 				12159C2E1F1B5E4E00570B64 /* Info.plist */,
+				12159C341F1B5ECA00570B64 /* GoogleService-Info.plist */,
 			);
 			path = HelloFirebase;
+			sourceTree = "<group>";
+		};
+		CF60708F9957D57D1C61A270 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				441B271D9470940083A9580F /* Pods_HelloFirebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2D45A58D5DE2CD0BC0FDF67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD2A6385BF1958E22817291B /* Pods-HelloFirebase.debug.xcconfig */,
+				91C11DB856C59020B12D1603 /* Pods-HelloFirebase.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12159C311F1B5E4E00570B64 /* Build configuration list for PBXNativeTarget "HelloFirebase" */;
 			buildPhases = (
+				C96C1B2C1EC1EB72397A8BD2 /* [CP] Check Pods Manifest.lock */,
 				12159C1B1F1B5E4E00570B64 /* Sources */,
 				12159C1C1F1B5E4E00570B64 /* Frameworks */,
 				12159C1D1F1B5E4E00570B64 /* Resources */,
+				9A28139E991D6E1F12FEEA75 /* [CP] Embed Pods Frameworks */,
+				B11F93F30595CB0AFD070D6D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +126,7 @@
 				TargetAttributes = {
 					12159C1E1F1B5E4E00570B64 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 9NGTNE5FRE;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,12 +155,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				12159C2D1F1B5E4E00570B64 /* LaunchScreen.storyboard in Resources */,
+				12159C351F1B5ECA00570B64 /* GoogleService-Info.plist in Resources */,
 				12159C2A1F1B5E4E00570B64 /* Assets.xcassets in Resources */,
 				12159C281F1B5E4E00570B64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A28139E991D6E1F12FEEA75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloFirebase/Pods-HelloFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B11F93F30595CB0AFD070D6D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloFirebase/Pods-HelloFirebase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C96C1B2C1EC1EB72397A8BD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		12159C1B1F1B5E4E00570B64 /* Sources */ = {
@@ -258,8 +338,10 @@
 		};
 		12159C321F1B5E4E00570B64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD2A6385BF1958E22817291B /* Pods-HelloFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9NGTNE5FRE;
 				INFOPLIST_FILE = HelloFirebase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shariif..HelloFirebase;
@@ -270,8 +352,10 @@
 		};
 		12159C331F1B5E4E00570B64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91C11DB856C59020B12D1603 /* Pods-HelloFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9NGTNE5FRE;
 				INFOPLIST_FILE = HelloFirebase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shariif..HelloFirebase;
